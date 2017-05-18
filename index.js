@@ -10,4 +10,5 @@ proj4.defs([
         ]
     ])
 
-console.log("new coords: " + proj4("ITM", "WGS84", [176938.5353,534281.1522]))
+var coords = proj4("ITM", "WGS84", [process.argv[2],process.argv[3]])
+console.log("WGS84:", "\n", + coords[1],"," ,coords[0])
