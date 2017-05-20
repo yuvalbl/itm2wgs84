@@ -26,5 +26,6 @@ for(var i in jsonData) {
 	jsonData[i][longProperty] = coordinate[1];
 }
 	
-
+console.log('\n\n');
+console.log('==========================================');
 fs.writeFile(outputFileName, JSON.stringify(jsonData), 'utf-8', function(){ console.log('output file: '+outputFileName)});
